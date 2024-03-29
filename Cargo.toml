@@ -1,0 +1,7 @@
+[package]
+name = "yew-life"
+version = "0.1.0"
+edition = "2021"
+authors = ["fmstat <stateresa.fm@gmail.com>"]
+
+[dependencies]
