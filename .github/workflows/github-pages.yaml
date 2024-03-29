@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build with trunk
-        run: trunk build --public-url .
+        run: trunk build --release --public-url .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
