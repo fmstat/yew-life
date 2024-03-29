@@ -86,7 +86,7 @@ impl App {
         row * self.cells_width + col
     }
 
-    fn view_cell(&self, idx: usize, cell: Cell, link: &Scope<Self>) -> Html {
+    fn view_cell(idx: usize, cell: Cell, link: &Scope<Self>) -> Html {
         let cell_status = {
             if cell.is_alive() {
                 "cell-live"
@@ -175,7 +175,7 @@ impl Component for App {
                 let cells = cells
                     .iter()
                     .enumerate()
-                    .map(|(x, cell)| self.view_cell(idx_offset + x, *cell, ctx.link()));
+                    .map(|(x, cell)| Self::view_cell(idx_offset + x, *cell, ctx.link()));
 
                 html! {
                     <div key={y} class="game-row">{ for cells }</div>
