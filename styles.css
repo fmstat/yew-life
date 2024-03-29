@@ -13,22 +13,14 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   font-weight: 300;
   background-color: #000000;
-}
-
-.app-logo {
-  animation: app-logo-scale infinite 4s linear;
-  height: 80px;
-  width: 80px;
 }
 
 .app-header {
   background-color: #000;
   height: 130px;
-  color: aliceblue;
+  color: rgb(37, 91, 138);
 }
 
 .app-title {
@@ -92,13 +84,4 @@ body {
 .game-buttons {
   width: 100%;
   margin-top: 20px;
-}
-
-@keyframes app-logo-scale {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(1.2);
-  }
 }
