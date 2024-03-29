@@ -204,7 +204,7 @@ impl Component for App {
                     </section>
                 </section>
                 <footer class="app-footer">
-                    <strong class="footer-text">{ "Game of Life" }</strong>
+                    <strong class="footer-text">{ "Game of Life " }</strong>
                     <a href="https://github.com/fmstat/yew-life" target="_blank">{ "source" }</a>
                 </footer>
             </div>
