@@ -7,7 +7,11 @@ use rand::Rng;
 use yew::html::Scope;
 use yew::{classes, html, Component, Html};
 
-fn main() {}
+fn main() {
+    wasm_logger::init(wasm_logger::Config::default());
+    log::trace!("Initializing yew...");
+    yew::Renderer::<App>::new().render();
+}
 
 struct App {
     active: bool,
