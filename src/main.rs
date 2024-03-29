@@ -1,8 +1,8 @@
 mod cell;
 
-use gloo::timers::callback::Interval;
-
 use cell::Cell;
+
+use gloo::timers::callback::Interval;
 use rand::Rng;
 use yew::html::Scope;
 use yew::{classes, html, Component, Html};
