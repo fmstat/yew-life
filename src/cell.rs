@@ -30,7 +30,7 @@ impl Cell {
         self.state = State::Dead;
     }
 
-    pub fn is_alive(&self) -> bool {
+    pub fn is_alive(self) -> bool {
         self.state == State::Alive
     }
 
